@@ -1,0 +1,520 @@
+.nav-menu {
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+.menu {
+     position: absolute;
+    margin-top: 300px;
+    left: 590px;
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Comic Sans MS", monospace;
+}
+.save {
+     font-family: "Comic Sans MS", monospace;
+    font-size: 20px;
+    background-color: white;
+    border: 3px solid black;
+    padding: 10px 20px;
+    margin-right: 100px;
+    cursor: pointer;
+
+}
+.save:hover{
+    background-color: #f0f0f0;
+}
+.saveText{
+     position: absolute;
+    margin-top: -100px;
+    left: 590px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Comic Sans MS", monospace;
+}
+.title {
+     position: absolute;
+    margin-top: 100px;
+    left: 590px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Comic Sans MS", monospace;
+}
+.menu:hover {
+ background-color: #f0f0f0;
+}
+.btn-nav {
+    font-family: "Comic Sans MS", monospace;
+    font-size: 20px;
+    background-color: white;
+    border: 3px solid black;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-nav:hover {
+    background-color: #f0f0f0;
+}
+
+.pudim {
+    background-image: url('pudim.png');
+    position: absolute;
+    margin-top: 200px;
+    left: 600px;
+    height: 200px;
+    width: 200px;
+    border: transparent;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pdm {
+    width: 200px;
+    height: 200px;
+}
+
+.cnt {
+    position: absolute;
+    font-size: 50px;
+    font-family: "Comic Sans MS", monospace;
+    left: 210px;
+    height: 200px;
+    width: 200px;
+    margin-top: 400px;
+}
+
+.txt {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: 50px;
+    left: 0px;
+    height: 200px;
+    width: 200px;
+    margin-top: 400px;
+}
+
+.upgrd {
+    position: absolute;
+    margin-top: 0px;
+    left: 960px;
+    height: 200px;
+    width: 400px;
+    border-width: 5px;
+    background-color: white;
+    padding-bottom: 150px;
+    padding-left: 155px;
+    font-size: larger;
+    background-image: url(velha.jpeg);
+    background-size: 150px 200px;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", monospace;
+    cursor: pointer;
+}
+.upgrd:hover{
+background-color: #f0f0f0;
+}
+.upgrd12 {
+    position: absolute;
+    margin-top: 0px;
+    left: 960px;
+    height: 200px;
+    width: 400px;
+    border-width: 5px;
+    background-color: white;
+    padding-bottom: 150px;
+    padding-left: 155px;
+    font-size: larger;
+    background-image: url(assassino.jpeg);
+    background-size: 150px 200px;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", monospace;
+    cursor: pointer;
+}
+
+.upgrd12:hover {
+    background-color: #f0f0f0;
+}
+
+.upgrd2 {
+    position: absolute;
+    margin-top: 200px;
+    left: 960px;
+    height: 200px;
+    width: 400px;
+    border-width: 5px;
+    background-color: white;
+    padding-bottom: 150px;
+    padding-left: 155px;
+    font-size: larger;
+    background-image: url(vaca.jpeg);
+    background-size: 150px 200px;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", monospace;
+    cursor: pointer;
+}
+
+.upgrd2:hover {
+    background-color: #f0f0f0;
+}
+.upgrd13 {
+    position: absolute;
+    margin-top: 200px;
+    left: 960px;
+    height: 200px;
+    width: 400px;
+    border-width: 5px;
+    background-color: white;
+    padding-bottom: 150px;
+    padding-left: 155px;
+    font-size: larger;
+    background-image: url(arma.webp);
+    background-size: 150px 200px;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", monospace;
+    cursor: pointer;
+}
+
+.upgrd13:hover {
+    background-color: #f0f0f0;
+}
+
+.upgrd3 {
+    position: absolute;
+    margin-top: 400px;
+    left: 960px;
+    height: 200px;
+    width: 400px;
+    border-width: 5px;
+    background-color: white;
+    padding-bottom: 150px;
+    padding-left: 155px;
+    font-size: larger;
+    background-image: url(travessa.jpeg);
+    background-size: 150px 200px;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", monospace;
+    cursor: pointer;
+}
+
+.upgrd3:hover {
+    background-color: #f0f0f0;
+}
+.upgrd14 {
+    position: absolute;
+    margin-top: 400px;
+    left: 960px;
+    height: 200px;
+    width: 400px;
+    border-width: 5px;
+    background-color: white;
+    padding-bottom: 150px;
+    padding-left: 155px;
+    font-size: larger;
+    background-image: url(pente.jpeg);
+    background-size: 150px 200px;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", monospace;
+    cursor: pointer;
+}
+
+.upgrd14:hover {
+    background-color: #f0f0f0;
+}
+
+.upgrd4 {
+    position: absolute;
+    margin-top: 400px;
+    left: 560px;
+    height: 200px;
+    width: 400px;
+    border-width: 5px;
+    background-color: white;
+    padding-bottom: 150px;
+    padding-left: 155px;
+    font-size: larger;
+    background-image: url(galinha.jpeg);
+    background-size: 150px 200px;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", monospace;
+    cursor: pointer;
+}
+
+.upgrd4:hover {
+    background-color: #f0f0f0;
+}
+.upgrd15 {
+    position: absolute;
+    margin-top: 400px;
+    left: 560px;
+    height: 200px;
+    width: 400px;
+    border-width: 5px;
+    background-color: white;
+    padding-bottom: 150px;
+    padding-left: 155px;
+    font-size: larger;
+    background-image: url(munição.jpeg);
+    background-size: 150px 200px;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", monospace;
+    cursor: pointer;
+}
+
+.upgrd15:hover {
+    background-color: #f0f0f0;
+}
+.upgrd5 {
+    position: absolute;
+    margin-top: 200px;
+    left: 560px;
+    height: 200px;
+    width: 400px;
+    border-width: 5px;
+    background-color: white;
+    padding-bottom: 150px;
+    padding-left: 155px;
+    font-size: larger;
+    background-image: url(cana.jpeg);
+    background-size: 150px 200px;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", monospace;
+    cursor: pointer;
+}
+
+.upgrd5:hover {
+    background-color: #f0f0f0;
+}
+.upgrd6 {
+    position: absolute;
+    margin-top: 0px;
+    left: 560px;
+    height: 200px;
+    width: 400px;
+    border-width: 5px;
+    background-color: white;
+    padding-bottom: 150px;
+    padding-left: 155px;
+    font-size: larger;
+    background-image: url(Evilfaps.png);
+    background-size: 150px 200px;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", monospace;
+    cursor: pointer;
+}
+.upgrd6:hover {
+    background-color: #f0f0f0;
+}
+.upgrd7 {
+    position: absolute;
+    margin-top: 0px;
+    left: 210px;
+    height: 200px;
+    width: 350px;
+    border-width: 5px;
+    background-color: white;
+    padding-bottom: 150px;
+    padding-left: 155px;
+    font-size: larger;
+    background-image: url(final.png);
+    background-size: 150px 200px;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", monospace;
+    cursor: pointer;
+}
+.upgrd7:hover{
+background-color: #f0f0f0;
+}
+.price {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 1285px;
+    margin-top: 72px;
+}
+
+.price2 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 1285px;
+    margin-top: 272px;
+}
+
+.price3 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 1285px;
+    margin-top: 472px;
+}
+
+.price4 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 885px;
+    margin-top: 472px;
+}
+.price5 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 885px;
+    margin-top: 272px;
+}
+.price6 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+     left: 885px;
+    margin-top: 72px;
+}
+.price7 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 445;
+    margin-top: 62px;
+}
+.priceTxt {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 1140px;
+    margin-top: 71px;
+}
+
+.upgrdTxt {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: 40px;
+    left: 0px;
+    margin-top: 0px;
+}
+
+.priceTxt2 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 1140px;
+    margin-top: 271px;
+}
+
+.priceTxt3 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 1140px;
+    margin-top: 471px;
+}
+
+.priceTxt4 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 740px;
+    margin-top: 471px;
+}
+.priceTxt5 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 740px;
+    margin-top: 271px;
+}
+.priceTxt6 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 740px;
+    margin-top: 71px;
+}
+.priceTxt7 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: larger;
+    left: 390px;
+    margin-top: 62px;
+}
+.funTagTxt {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: 13px;
+    left: 1145px;
+    margin-top: 130px;
+}
+
+.funTagTxt2 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: 13px;
+    left: 1145px;
+    margin-top: 300px;
+}
+
+.funTagTxt3 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: 13px;
+    left: 1145px;
+    margin-top: 500px;
+}
+
+.funTagTxt4 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: 13px;
+    left: 745px;
+    margin-top: 500px;
+}
+.funTagTxt5 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: 13px;
+    left: 745px;
+    margin-top: 300px;
+}
+.funTagTxt6 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: 13px;
+     left: 745px;
+    margin-top: 100px;
+}
+.funTagTxt7 {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: 13px;
+    left: 390px;
+    margin-top: 90px;
+}
+.pps {
+    position: absolute;
+    font-family: "Comic Sans MS", monospace;
+    font-size: 30px;
+    left: 0px;
+    margin-top: 480px;
+}

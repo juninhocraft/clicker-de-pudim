@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <title>clicker de pudim</title>
+        <link rel="stylesheet" href="style.css">
+
+    
+        <style>
+            @font-face {
+                font-family: 'PixelOperator';
+                src: url('PixelOperator.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'PixelOperator';
+                src: url('PixelOperator.ttf') format('truetype');
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            #telaBadEnding {
+                position: absolute;
+                inset: 0;
+                background: black;
+                z-index: 1000; 
+            }
+            #telaPretaTexto {
+                display: none;
+                position: absolute;
+                inset: 0;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-family: 'PixelOperator', monospace;
+                font-size: 40px;
+                text-align: center;
+                padding: 20px;
+            }
+
+            #telaGoodEnding {
+                position: absolute;
+                inset: 0;
+                background: white;
+                z-index: 1000;
+            }
+            #canvasGoodEndingId {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+            }
+            #telaTextoGoodEnding {
+                display: none;
+                position: absolute;
+                inset: 0;
+                align-items: center;
+                justify-content: center;
+                color: black;
+                font-family: "Comic Sans MS", monospace;
+                font-size: 40px;
+                text-align: center;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    
+<div id="scrnSlots" style="display:none;" class="nav-menu">
+    <h2 class="saveText">Selecione um Save</h2>
+    <div id="slotBox1" class="save"></div>
+    <div id="slotBox2" class="save"></div>
+    <div id="slotBox3" class="save"></div>
+    <button id="btnVoltarMenuSlots" class="save">Voltar</button>
+</div>
+       <!--menu de navegação-->
+        <div class="nav-menu" id="navMenuId" style="display: none;">
+            <button id="btnMenu" class="btn-nav">Menu</button>
+            <button id="btnJogo" class="btn-nav" style="display: none;"> voltar ao jogo?</button>
+            <button id="btnLoja" class="btn-nav"> Loja de Upgrades</button>
+            <button id="btnLoja2" class="btn-nav"> Loja do pastor metralha</button>
+        </div>
+
+        <!--counter-->
+        <div id="gameStatsId" style="display: none;">
+            <div class="txt" id="txtId">pudins:</div>
+            <div class="cnt" id="cntId">0</div>
+        </div>
+
+      <!--jogo-->
+        <div id="scrnGm" style="display: none;">
+            <div id="telaBadEnding" style="display:none;">
+                <!-- Tela preta com o texto digitado letra por letra -->
+                <div id="telaPretaTexto">
+                    <span id="textoTypewriterId"></span>
+                </div>
+            </div>
+            <div id="telaGoodEnding" style="display:none;">
+                <!-- Sprite sheet específica do good ending (troque o arquivo no script.js) -->
+                <canvas id="canvasGoodEndingId" width="1366" height="768"></canvas>
+                <!-- Texto customizável, aparece depois da animação -->
+                <div id="telaTextoGoodEnding">
+                    <span id="textoTypewriterGoodId"></span>
+                </div>
+            </div>
+            <button class="pudim" id="pudimId"><img src="pudim.png" class="pdm"></button>
+            <p class="pps">Pudins por segundo: <span id="ppsId">0</span></p>
+        </div>
+
+        <!--menu-->
+        <div id="scrnMn">
+            <h1 class="title">CLICKER DE PUDIM</h1>
+            
+            <button class="menu" id="menuId">JOGAR</button>
+        </div>
+
+    <!--loja 1-->
+        <div id="scrnSp" style="display: none;">
+            <div class="upgrdTxt">upgrades:</div>
+            
+            <button class="upgrd" id="upgrdId">velha mocoronga</button>
+            <div class="priceTxt">pudins precisos:</div>
+            <div class="price" id="priceId">15</div>
+            <div class="funTagTxt">"Voce aceitaria um pudim feito por essa velha vagabunda?"Adiciona 1 pudim por segundo</div>
+            
+            <button class="upgrd2" id="upgrdId2">vaca</button>
+            <div class="priceTxt2">pudins precisos:</div>
+            <div class="price2" id="priceId2">100</div>
+            <div class="funTagTxt2">"É uma fazenda de boi. É claro que vai ter boi lá fora"Aumenta os pudins por segundo em 8</div>
+
+            <button class="upgrd3" id="upgrdId3">travessa</button>
+            <div class="priceTxt3">pudins precisos:</div>
+            <div class="price3" id="priceId3">1100</div>
+            <div class="funTagTxt3">"É uma travessa não há muito o que dizer"Aumenta os pudins por click em 1</div>
+            
+            <button class="upgrd4" id="upgrdId4">galinha</button>
+            <div class="priceTxt4">pudins precisos:</div>
+            <div class="price4" id="priceId4">6000</div>
+            <div class="funTagTxt4">"defecador de ovos"<br> deixa os pudins <br> a incriveis 20 <br> pudins por segundo</div>
+
+             <button class="upgrd5" id="upgrdId5">fazenda de cana</button>
+            <div class="priceTxt5">pudins precisos:</div>
+            <div class="price5" id="priceId5">12000</div>
+            <div class="funTagTxt5">"Depois dessa você<br> vai ficar em cana"<br> deixa os pudins a 50 <br> pudins por segundo</div> 
+            
+            <button class="upgrd6" id="upgrdId6">compressor de pudins</button>
+            <div class="priceTxt6">pudins precisos:</div>
+            <div class="price6" id="priceId6">66600</div>
+            <div class="funTagTxt6">"Quem precisa de velhas<br>quando se tem um compressor<br>de pudins"gera 1000<br>pudins por segundo</div> 
+            
+             <button class="upgrd7" id="upgrdId7">final</button>
+            <div class="priceTxt7">Preço:</div>
+            <div class="price7" id="priceId7">99000</div>
+            <div class="funTagTxt7">"Sim o botão é menor<br>por questões<br>de espaço e é por isso<br>que está escrito preço<br>inves de pudins precisos"</div>  
+ 
+        </div>
+
+     <!--loja 2-->
+        <div id="scrnSp2" style="display: none;">
+             <div class="upgrdTxt">matadores de aluguel:</div>
+             <button class="upgrd12" id="upgrdAlcanceId">Contratar assasino?</button>
+            <div class="priceTxt">pudins precisos:</div>
+            <div class="price" id="priceAlcanceId">750</div>
+            <div class="funTagTxt">"Ai nobru apelão" Ele dispara automaticamente contra as crianças.Um tiro a cada 2 segundos.</div>
+            <button class="upgrd13" id="upgrdVelAtiradorId">Arma nova</button>
+            <div class="priceTxt2">pudins precisos:</div>
+            <div class="price2" id="priceVelAtiradorId">1000</div>
+            <div class="funTagTxt2">"Demos uma m14 para o assasino e olha no que deu" Atira 200% mais rápido.</div>
+            <button class="upgrd14" id="upgrdVelAtiradorId2">pente alongado</button>
+            <div class="priceTxt3">pudins precisos:</div>
+            <div class="price3" id="priceVelAtiradorId2">7000</div>
+            <div class="funTagTxt3">"A arma mais rapida do Oeste" Atira 400% mais rápido.</div>
+            <button class="upgrd15" id="upgrdExplosaoAtiradorId">Munição Explosiva</button>
+            <div class="priceTxt4">pudins precisos:</div>
+            <div class="price4" id="priceExplosaoAtiradorId">10000</div>
+            <div class="funTagTxt4">"Kaboom?.Sim rico,Kaboom" <br>O tiro gera uma explosão<br>que elimina inimigos próximos.</div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
