@@ -83,7 +83,7 @@ let qtdGalinhas = 0;
 let qtdFazendasCana = 0;
 
 function verificarMtPdm() {
-    if (pps >= 3500 && !possuiMtPdm) {
+    if (pps >= 35000 && !possuiMtPdm) {
         possuiMtPdm = true;
         alert("vai tomar no cu seu arrombado, vai tocar na grama e para de jogar esse jogo de merda");
     }
@@ -167,7 +167,7 @@ upgrd4.addEventListener('click', function () {
         cntr = cntr - val4;
         val4 = Math.round(val4 * 1.15);
         txtresult_price4.textContent = comprimirNumero(val4);
-        pps = pps + 20;
+        pps = pps + 100;
         qtdGalinhas++;
         atualizarContadorVisual();
         verificarMtPdm();
@@ -186,7 +186,7 @@ upgrd5.addEventListener('click', function () {
         cntr = cntr - val5;
         val5 = Math.round(val5 * 1.15);
         txtresult_price5.textContent = comprimirNumero(val5);
-        pps = pps + 50;
+        pps = pps + 240;
         qtdFazendasCana++;
         atualizarContadorVisual();
         verificarMtPdm();
@@ -220,7 +220,7 @@ upgrd6.addEventListener('click', function () {
 });
 
 // upgrade 7 (final: dispara o good ending)
-let val7 = 99000;
+let val7 = 999000;
 const upgrd7 = document.getElementById('upgrdId7');
 const txtresult_price7 = document.getElementById('priceId7');
 
