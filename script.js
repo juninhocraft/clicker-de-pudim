@@ -615,7 +615,7 @@ function obterEstadoPadrao() {
         val4: 6000,
         val5: 12000,
         val6: 66600,
-        val7: 99000,
+        val7: 999000,
         possuiFinal: false,
         possuiAtirador: false,
         valAlcance: 750,
@@ -670,7 +670,7 @@ function aplicarEstado(s) {
     val4 = s.val4;
     val5 = s.val5;
     val6 = (s.val6 !== undefined) ? s.val6 : 66600;
-    val7 = (s.val7 !== undefined) ? s.val7 : 99000;
+    val7 = (s.val7 !== undefined) ? s.val7 : 999000;
     possuiFinal = !!s.possuiFinal;
     possuiAtirador = s.possuiAtirador;
     valAlcance = s.valAlcance;
