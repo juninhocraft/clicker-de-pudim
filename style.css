@@ -1,3 +1,23 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #111;
+}
+
+#stage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1366px;
+    height: 768px;
+    background: white;
+    transform-origin: top left;
+    overflow: hidden;
+}
+
+/* MENUS  */
 .nav-menu {
     position: absolute;
     top: 140px;
@@ -8,8 +28,9 @@
     gap: 10px;
     align-items: flex-start;
 }
+
 .menu {
-     position: absolute;
+    position: absolute;
     margin-top: 300px;
     left: 590px;
     height: 50px;
@@ -18,21 +39,21 @@
     cursor: pointer;
     font-family: "Comic Sans MS", monospace;
 }
+.menu:hover { background-color: #f0f0f0; }
+
 .save {
-     font-family: "Comic Sans MS", monospace;
+    font-family: "Comic Sans MS", monospace;
     font-size: 20px;
     background-color: white;
     border: 3px solid black;
     padding: 10px 20px;
     margin-right: 100px;
     cursor: pointer;
+}
+.save:hover { background-color: #f0f0f0; }
 
-}
-.save:hover{
-    background-color: #f0f0f0;
-}
-.saveText{
-     position: absolute;
+.saveText {
+    position: absolute;
     margin-top: -100px;
     left: 590px;
     height: 200px;
@@ -41,8 +62,9 @@
     cursor: pointer;
     font-family: "Comic Sans MS", monospace;
 }
+
 .title {
-     position: absolute;
+    position: absolute;
     margin-top: 100px;
     left: 590px;
     height: 200px;
@@ -51,9 +73,7 @@
     cursor: pointer;
     font-family: "Comic Sans MS", monospace;
 }
-.menu:hover {
- background-color: #f0f0f0;
-}
+
 .btn-nav {
     font-family: "Comic Sans MS", monospace;
     font-size: 20px;
@@ -63,11 +83,9 @@
     margin-right: 10px;
     cursor: pointer;
 }
+.btn-nav:hover { background-color: #f0f0f0; }
 
-.btn-nav:hover {
-    background-color: #f0f0f0;
-}
-
+/* JOGO */
 .pudim {
     background-image: url('pudim.png');
     position: absolute;
@@ -105,31 +123,18 @@
     margin-top: 400px;
 }
 
-.upgrd {
+.pps {
     position: absolute;
-    margin-top: 0px;
-    left: 960px;
-    height: 200px;
-    width: 400px;
-    border-width: 5px;
-    background-color: white;
-    padding-bottom: 150px;
-    padding-left: 155px;
-    font-size: larger;
-    background-image: url(velha.jpeg);
-    background-size: 150px 200px;
-    background-position: 10% center;
-    background-repeat: no-repeat;
     font-family: "Comic Sans MS", monospace;
-    cursor: pointer;
+    font-size: 30px;
+    left: 0px;
+    margin-top: 480px;
 }
-.upgrd:hover{
-background-color: #f0f0f0;
-}
-.upgrd12 {
+
+/* LOJAS: BOTÕES  */
+.upgrd, .upgrd2, .upgrd3, .upgrd4, .upgrd5, .upgrd6, .upgrd7,
+.upgrd12, .upgrd13, .upgrd14, .upgrd15 {
     position: absolute;
-    margin-top: 0px;
-    left: 960px;
     height: 200px;
     width: 400px;
     border-width: 5px;
@@ -137,7 +142,6 @@ background-color: #f0f0f0;
     padding-bottom: 150px;
     padding-left: 155px;
     font-size: larger;
-    background-image: url(assassino.jpeg);
     background-size: 150px 200px;
     background-position: 10% center;
     background-repeat: no-repeat;
@@ -145,268 +149,26 @@ background-color: #f0f0f0;
     cursor: pointer;
 }
 
-.upgrd12:hover {
+.upgrd:hover, .upgrd2:hover, .upgrd3:hover, .upgrd4:hover, .upgrd5:hover,
+.upgrd6:hover, .upgrd7:hover, .upgrd12:hover, .upgrd13:hover,
+.upgrd14:hover, .upgrd15:hover {
     background-color: #f0f0f0;
 }
 
-.upgrd2 {
-    position: absolute;
-    margin-top: 200px;
-    left: 960px;
-    height: 200px;
-    width: 400px;
-    border-width: 5px;
-    background-color: white;
-    padding-bottom: 150px;
-    padding-left: 155px;
-    font-size: larger;
-    background-image: url(vaca.jpeg);
-    background-size: 150px 200px;
-    background-position: 10% center;
-    background-repeat: no-repeat;
-    font-family: "Comic Sans MS", monospace;
-    cursor: pointer;
-}
+.upgrd   { margin-top: 0px;   left: 960px; background-image: url(velha.jpeg); }
+.upgrd2  { margin-top: 200px; left: 960px; background-image: url(vaca.jpeg); }
+.upgrd3  { margin-top: 400px; left: 960px; background-image: url(travessa.jpeg); }
+.upgrd4  { margin-top: 400px; left: 560px; background-image: url(galinha.jpeg); }
+.upgrd5  { margin-top: 200px; left: 560px; background-image: url(cana.jpeg); }
+.upgrd6  { margin-top: 0px;   left: 560px; background-image: url(Evilfaps.png); }
+.upgrd7  { margin-top: 0px;   left: 210px; width: 350px; background-image: url(final.png); }
 
-.upgrd2:hover {
-    background-color: #f0f0f0;
-}
-.upgrd13 {
-    position: absolute;
-    margin-top: 200px;
-    left: 960px;
-    height: 200px;
-    width: 400px;
-    border-width: 5px;
-    background-color: white;
-    padding-bottom: 150px;
-    padding-left: 155px;
-    font-size: larger;
-    background-image: url(arma.webp);
-    background-size: 150px 200px;
-    background-position: 10% center;
-    background-repeat: no-repeat;
-    font-family: "Comic Sans MS", monospace;
-    cursor: pointer;
-}
+.upgrd12 { margin-top: 0px;   left: 960px; background-image: url(assassino.jpeg); }
+.upgrd13 { margin-top: 200px; left: 960px; background-image: url(arma.webp); }
+.upgrd14 { margin-top: 400px; left: 960px; background-image: url(pente.jpeg); }
+.upgrd15 { margin-top: 400px; left: 560px; background-image: url(munição.jpeg); }
 
-.upgrd13:hover {
-    background-color: #f0f0f0;
-}
-
-.upgrd3 {
-    position: absolute;
-    margin-top: 400px;
-    left: 960px;
-    height: 200px;
-    width: 400px;
-    border-width: 5px;
-    background-color: white;
-    padding-bottom: 150px;
-    padding-left: 155px;
-    font-size: larger;
-    background-image: url(travessa.jpeg);
-    background-size: 150px 200px;
-    background-position: 10% center;
-    background-repeat: no-repeat;
-    font-family: "Comic Sans MS", monospace;
-    cursor: pointer;
-}
-
-.upgrd3:hover {
-    background-color: #f0f0f0;
-}
-.upgrd14 {
-    position: absolute;
-    margin-top: 400px;
-    left: 960px;
-    height: 200px;
-    width: 400px;
-    border-width: 5px;
-    background-color: white;
-    padding-bottom: 150px;
-    padding-left: 155px;
-    font-size: larger;
-    background-image: url(pente.jpeg);
-    background-size: 150px 200px;
-    background-position: 10% center;
-    background-repeat: no-repeat;
-    font-family: "Comic Sans MS", monospace;
-    cursor: pointer;
-}
-
-.upgrd14:hover {
-    background-color: #f0f0f0;
-}
-
-.upgrd4 {
-    position: absolute;
-    margin-top: 400px;
-    left: 560px;
-    height: 200px;
-    width: 400px;
-    border-width: 5px;
-    background-color: white;
-    padding-bottom: 150px;
-    padding-left: 155px;
-    font-size: larger;
-    background-image: url(galinha.jpeg);
-    background-size: 150px 200px;
-    background-position: 10% center;
-    background-repeat: no-repeat;
-    font-family: "Comic Sans MS", monospace;
-    cursor: pointer;
-}
-
-.upgrd4:hover {
-    background-color: #f0f0f0;
-}
-.upgrd15 {
-    position: absolute;
-    margin-top: 400px;
-    left: 560px;
-    height: 200px;
-    width: 400px;
-    border-width: 5px;
-    background-color: white;
-    padding-bottom: 150px;
-    padding-left: 155px;
-    font-size: larger;
-    background-image: url(munição.jpeg);
-    background-size: 150px 200px;
-    background-position: 10% center;
-    background-repeat: no-repeat;
-    font-family: "Comic Sans MS", monospace;
-    cursor: pointer;
-}
-
-.upgrd15:hover {
-    background-color: #f0f0f0;
-}
-.upgrd5 {
-    position: absolute;
-    margin-top: 200px;
-    left: 560px;
-    height: 200px;
-    width: 400px;
-    border-width: 5px;
-    background-color: white;
-    padding-bottom: 150px;
-    padding-left: 155px;
-    font-size: larger;
-    background-image: url(cana.jpeg);
-    background-size: 150px 200px;
-    background-position: 10% center;
-    background-repeat: no-repeat;
-    font-family: "Comic Sans MS", monospace;
-    cursor: pointer;
-}
-
-.upgrd5:hover {
-    background-color: #f0f0f0;
-}
-.upgrd6 {
-    position: absolute;
-    margin-top: 0px;
-    left: 560px;
-    height: 200px;
-    width: 400px;
-    border-width: 5px;
-    background-color: white;
-    padding-bottom: 150px;
-    padding-left: 155px;
-    font-size: larger;
-    background-image: url(Evilfaps.png);
-    background-size: 150px 200px;
-    background-position: 10% center;
-    background-repeat: no-repeat;
-    font-family: "Comic Sans MS", monospace;
-    cursor: pointer;
-}
-.upgrd6:hover {
-    background-color: #f0f0f0;
-}
-.upgrd7 {
-    position: absolute;
-    margin-top: 0px;
-    left: 210px;
-    height: 200px;
-    width: 350px;
-    border-width: 5px;
-    background-color: white;
-    padding-bottom: 150px;
-    padding-left: 155px;
-    font-size: larger;
-    background-image: url(final.png);
-    background-size: 150px 200px;
-    background-position: 10% center;
-    background-repeat: no-repeat;
-    font-family: "Comic Sans MS", monospace;
-    cursor: pointer;
-}
-.upgrd7:hover{
-background-color: #f0f0f0;
-}
-.price {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 1285px;
-    margin-top: 72px;
-}
-
-.price2 {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 1285px;
-    margin-top: 272px;
-}
-
-.price3 {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 1285px;
-    margin-top: 472px;
-}
-
-.price4 {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 885px;
-    margin-top: 472px;
-}
-.price5 {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 885px;
-    margin-top: 272px;
-}
-.price6 {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-     left: 885px;
-    margin-top: 72px;
-}
-.price7 {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 445;
-    margin-top: 62px;
-}
-.priceTxt {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 1140px;
-    margin-top: 71px;
-}
-
+/* LOJAS: TEXTOS */
 .upgrdTxt {
     position: absolute;
     font-family: "Comic Sans MS", monospace;
@@ -415,106 +177,174 @@ background-color: #f0f0f0;
     margin-top: 0px;
 }
 
-.priceTxt2 {
+.price, .price2, .price3, .price4, .price5, .price6, .price7,
+.priceTxt, .priceTxt2, .priceTxt3, .priceTxt4, .priceTxt5, .priceTxt6, .priceTxt7 {
     position: absolute;
     font-family: "Comic Sans MS", monospace;
     font-size: larger;
-    left: 1140px;
-    margin-top: 271px;
 }
 
-.priceTxt3 {
+.price  { left: 1285px; margin-top: 72px; }
+.price2 { left: 1285px; margin-top: 272px; }
+.price3 { left: 1285px; margin-top: 472px; }
+.price4 { left: 885px;  margin-top: 472px; }
+.price5 { left: 885px;  margin-top: 272px; }
+.price6 { left: 885px;  margin-top: 72px; }
+.price7 { left: 445px;  margin-top: 62px; }
+
+.priceTxt  { left: 1140px; margin-top: 71px; }
+.priceTxt2 { left: 1140px; margin-top: 271px; }
+.priceTxt3 { left: 1140px; margin-top: 471px; }
+.priceTxt4 { left: 740px;  margin-top: 471px; }
+.priceTxt5 { left: 740px;  margin-top: 271px; }
+.priceTxt6 { left: 740px;  margin-top: 71px; }
+.priceTxt7 { left: 390px;  margin-top: 62px; }
+
+.funTagTxt, .funTagTxt2, .funTagTxt3, .funTagTxt4,
+.funTagTxt5, .funTagTxt6, .funTagTxt7 {
     position: absolute;
     font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 1140px;
-    margin-top: 471px;
+    font-size: 13px;
 }
 
-.priceTxt4 {
+.funTagTxt  { left: 1145px; margin-top: 130px; }
+.funTagTxt2 { left: 1145px; margin-top: 300px; }
+.funTagTxt3 { left: 1145px; margin-top: 500px; }
+.funTagTxt4 { left: 745px;  margin-top: 500px; }
+.funTagTxt5 { left: 745px;  margin-top: 300px; }
+.funTagTxt6 { left: 745px;  margin-top: 100px; }
+.funTagTxt7 { left: 390px;  margin-top: 90px; }
+
+/* CASSINO  */
+.casinoTitulo {
     position: absolute;
+    top: 0;
+    margin: 15px 0 0;
+    width: 100%;
+    text-align: center;
     font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 740px;
-    margin-top: 471px;
-}
-.priceTxt5 {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 740px;
-    margin-top: 271px;
-}
-.priceTxt6 {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 740px;
-    margin-top: 71px;
-}
-.priceTxt7 {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: larger;
-    left: 390px;
-    margin-top: 62px;
-}
-.funTagTxt {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: 13px;
-    left: 1145px;
-    margin-top: 130px;
+    font-size: 36px;
 }
 
-.funTagTxt2 {
+.casinoTexto {
     position: absolute;
+    top: 90px;
+    left: 930px;
+    margin: 0;
+    font-size: 25px;
     font-family: "Comic Sans MS", monospace;
-    font-size: 13px;
-    left: 1145px;
-    margin-top: 300px;
 }
 
-.funTagTxt3 {
+#tipoAposta, #escolhaRoleta, #valorAposta {
     position: absolute;
+    left: 930px;
+    width: 300px;
+    height: 45px;
+    font-size: 20px;
+}
+#tipoAposta    { top: 140px; }
+#escolhaRoleta { top: 200px; }
+#valorAposta   { top: 260px; }
+
+#btnApostar, #btnAllIn {
+    position: absolute;
+    left: 930px;
+    width: 300px;
+    cursor: pointer;
     font-family: "Comic Sans MS", monospace;
-    font-size: 13px;
-    left: 1145px;
-    margin-top: 500px;
+}
+#btnApostar { top: 330px; height: 60px; font-size: 25px; }
+#btnAllIn   { top: 405px; height: 45px; font-size: 20px; }
+
+#numeroRoleta, #resultadoCasino, #construcoesPerdidas {
+    position: absolute;
+    left: 340px;
+    width: 686px;
+    margin: 0;
+    text-align: center;
+    font-family: "Comic Sans MS", monospace;
+}
+#numeroRoleta       { top: 395px; font-size: 32px; }
+#resultadoCasino    { top: 450px; font-size: 22px; }
+#construcoesPerdidas { top: 560px; font-weight: bold; white-space: pre-line; }
+
+/* roleta */
+#roletaContainer {
+    position: absolute;
+    top: 80px;
+    left: 533px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.funTagTxt4 {
-    position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: 13px;
-    left: 745px;
-    margin-top: 500px;
+/* o fundo em gradiente cônico é gerado pelo script.js (criarNumerosRoleta) */
+#roleta {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 8px solid #d6a437;
+    position: relative;
+    transition: transform 5s cubic-bezier(.12,.7,.15,1);
+    box-shadow: 0 0 15px black;
 }
-.funTagTxt5 {
+
+#numerosRoleta {
     position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: 13px;
-    left: 745px;
-    margin-top: 300px;
+    inset: 0;
+    border-radius: 50%;
 }
-.funTagTxt6 {
+
+.numeroRoletaItem {
     position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: 13px;
-     left: 745px;
-    margin-top: 100px;
+    left: 50%;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    margin: -12.5px;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
 }
-.funTagTxt7 {
+
+#centroRoleta {
     position: absolute;
-    font-family: "Comic Sans MS", monospace;
-    font-size: 13px;
-    left: 390px;
-    margin-top: 90px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #d6a437;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
 }
-.pps {
+
+#ponteiroRoleta {
     position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 28px solid gold;
+}
+#aviso{
+    position: absolute;
+    left: 340px;
+    width: 686px;
+    margin: 0;
+    text-align: center;
     font-family: "Comic Sans MS", monospace;
-    font-size: 30px;
-    left: 0px;
-    margin-top: 480px;
 }
