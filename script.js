@@ -201,6 +201,10 @@ const upgrd6 = document.getElementById('upgrdId6');
 const txtresult_price6 = document.getElementById('priceId6');
 
 upgrd6.addEventListener('click', function () {
+    if (!confirm("dona creusa disse- meu fí compre isso e matará todos nós. Não nos sacrifique")) {
+            return;
+        }
+
     if (cntr >= val6) {
         cntr = cntr - val6;
         val6 = Math.round(val6 * 1.15);
