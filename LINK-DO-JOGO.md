@@ -1,1 +1,1 @@
-https://juninhocraft.github.io/clicker-de-pudim/ COLOCA ESSA PORRA NA BARRA DE PESQUISA DO GOOGLE
+https://juninhocraft.github.io/clicker-de-pudim/ link🥀🥀🥀
